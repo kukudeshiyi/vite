@@ -103,3 +103,9 @@ export default defineConfig(({ command, mode }) => {
   }
 })
 ```
+
+After configuration, you can use environment variables in your application.
+
+```js
+const isTestEnv = __APP_ENV__ === 'test';
+```
